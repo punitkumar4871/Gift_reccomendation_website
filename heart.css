@@ -1,0 +1,25 @@
+.like-button {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+
+.like-button:before {
+  content: '♡';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #ccc;
+}
+
+.like-button.liked:before {
+  color: #f00;
+}

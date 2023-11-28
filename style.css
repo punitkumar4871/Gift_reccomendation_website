@@ -1,0 +1,173 @@
+@import url("style3.css");
+@import url("home.css");
+@import url("heart.css");
+body{
+    background-color: #f8f8f8;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    min-height: 500px;
+}
+.line{
+    height:10px;
+    border-top: 10px solid;
+    border-image:   linear-gradient(to right, #9afb95 20%,#7ffab1 25%,#4fe4f8 25%, #4facf8 50%,#4f7af8 50%,#a274fa 25%,#da98fb 25%, #f485fa 25% ) 8;
+}
+.top-nav{
+    overflow: hidden;
+    background-color: #ffffff;
+    font-weight: bold;
+    width:100%;
+    height:120px;
+    position:sticky;
+}
+.top-nav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+}
+  
+.top-nav a:hover[href="home.html"] {
+    background-color: transparent;
+    color: #f485fa;
+    
+}
+.top-nav a:hover[href="wishlist.html"] {
+    background-color: transparent;
+    color: #4f7af8;
+}
+.top-nav a:hover[href="login.html"] {
+    background-color: transparent;
+    color: #4fe4f8;
+}
+.top-nav a[href="index.html"]{
+    float:inline-end;
+    position:absolute;
+}
+.top-nav a:hover[href="index.html"] {
+    background-color: transparent;
+    color: indianred;
+}
+.container{
+    padding: 100px;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-top: 100px;;
+}
+.box{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: #ffffff;
+    text-align:center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.183), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    height:250px;
+}
+.box p{
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#mom, #dad,#friend,#daughter, #son, #anyone, #co{
+background-color: transparent;
+  border: 1px black solid;
+  border-radius: 20px;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;  
+  position: center;
+  display: inline-block;
+}
+#mom:hover{
+    opacity: 1;
+    background-color: #da98fb;
+    border: 1px #da98fb solid;
+    color: white;
+}
+#dad:hover{
+    opacity: 1;
+    background-color: #4facf8;
+    border: 1px #4facf8 solid;
+    color: white;
+}
+#friend:hover{
+    opacity: 1;
+    background-color: #a274fa;
+    border: 1px #a274fa solid;
+    color: white;
+}
+#son:hover{
+    opacity: 1;
+    background-color: #74e6fa;
+    border: 1px #74e6fa solid;
+    color: white;
+}
+#daughter:hover{
+    opacity: 1;
+    background-color: indianred;
+    border: 1px indianred solid;
+    color: white;
+}
+#co:hover{
+    opacity: 1;
+    background-color: #a274fa;
+    border: 1px #a274fa solid;
+    color: white;
+}
+#anyone:hover{
+    opacity: 1;
+    background-color: seagreen;
+    border: 1px seagreen solid;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.section h1{
+    margin-top:40px;
+    padding-top: 30px;
+}
+.section h1{
+    padding: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) and (min-height:0px) and (max-width:900px) {
+    .top-nav a{
+        font-size: 70%;
+        padding:15px;
+    }
+    .top-nav, .line{
+        height:auto;
+        width:100%;
+    }
+    .box{    
+        padding-top: auto;
+        padding-bottom: auto;
+        margin: auto;
+        height:100%;
+        width:100%;
+        position:relative;
+    }
+    #mom, #dad,#friend,#daughter, #son, #anyone, #co{
+        position: center;
+        display: inline-block;
+    }
+  }

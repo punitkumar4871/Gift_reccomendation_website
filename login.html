@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <style>
+    body{
+        font-family: Georgia;
+        background-image: url("background.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 400px;
+  height: 300px;
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 2px 0px 6px 2px rgba(111, 230, 254, 0.416);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Georgia;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-family: Georgia;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form action="#">
+        <h1 style="color: white;">Log In</h1>
+        <input type="email" placeholder="Email Address">
+        <input type="password" placeholder="Password">
+        <button type="submit" onclick=" myFunc()">Login In</button>
+        <br>
+        <a href="#" style="color: white;">Forgot Password?</a>
+      </form>
+    </div>
+  </div>
+  <script>
+    // This code is optional, but it will add some animation to the sign in form.
+
+const formContainer = document.querySelector(".form-container");
+
+formContainer.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  formContainer.classList.add("animated");
+
+  setTimeout(function() {
+    formContainer.classList.remove("animated");
+  }, 1000);
+});
+function myFunc(){
+     window.open("index.html");
+   }
+  </script>
+</body>
+</html>
